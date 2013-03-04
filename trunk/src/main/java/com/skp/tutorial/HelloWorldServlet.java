@@ -7,14 +7,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
  
 public class HelloWorldServlet extends HttpServlet{
- 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 	throws IOException{
 		PrintWriter out = response.getWriter();
-		out.println("<html>");
-		out.println("<body>");
+		out.println("<html><body>");
 		out.println("<h1>Hello Servlet </h1>");
-		out.println("</body>");
-		out.println("</html>");	
+		out.println("</body></html>");
+		System.out.println();
 	}
 }
